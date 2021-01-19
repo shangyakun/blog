@@ -8,7 +8,7 @@
             <div class="categories-container">
               <div class="categories">
                 <span class="label">Categories</span>
-                <span class="category" v-for="item in $page.post.categories" :key='item.id'>{{item.title}}</span>
+                <span class="category" v-for="item in $page.post.categories" :key='item.id'>{{item.title}}&nbsp;&nbsp;</span>
               </div>
             </div>
             <div class="year-container">
@@ -40,6 +40,7 @@
             categories {
                 id
                 title
+                color
             }
 		}
 	} 
